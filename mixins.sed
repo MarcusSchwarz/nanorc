@@ -1,34 +1,38 @@
-/^+STRING/ {
+/^+STRING\>/ {
     r mixins/string.nanorc
     d
 }
-/^+BOOLEAN/ {
+/^+BOOLEAN\>/ {
     r mixins/boolean.nanorc
     d
 }
-/^+FUNCTION/ {
+/^+FUNCTION\>/ {
     r mixins/function.nanorc
     d
 }
-/^+CCOMMENT/ {
+/^+CCOMMENT\>/ {
     r mixins/ccomment.nanorc
     d
 }
-/^+HASHCOMMENT/ {
+/^+HASHCOMMENT\>/ {
     r mixins/hashcomment.nanorc
     d
 }
-/^+INI/ {
+/^+INI\>/ {
     r mixins/ini.nanorc
     d
 }
-/^+TODO/ {
+/^+WHITESPACES\?\>/ {
+    r mixins/whitespaces.nanorc
+    d
+}
+/^+TODO\>/ {
     r mixins/todo.nanorc
     d
 }
-/^+LINT/ {
+/^+LINT\>/ {
     r mixins/lint.nanorc
     d
 }
-s/^+LONGLINE[[:space:]]*$/WARNING: "^.{80}.+$"/
-s/^+LONGLINE\([0-9]\+\)[[:space:]]*$/WARNING: "^.{\1}.+$"/
+s/^+LONGLINE\([[:space:]]*\|[[:space:]]\+#.*\)$/WARNING: "^.{80}.+$"/
+s/^+LONGLINE\([0-9]\+\)\([[:space:]]*\|[[:space:]]\+#.*\)$/WARNING: "^.{\1}.+$"/
