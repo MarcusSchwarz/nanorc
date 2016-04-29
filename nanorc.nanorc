@@ -1,5 +1,5 @@
 syntax "nanorc" "nanorc$"
-header "^syntax +\""
+header "^syntax[[:space:]]+"[^"]*"[[:space:]]+""
 
 TYPE:     "^i?color[[:space:]]*(bright)?(white|black|red|blue)?(,(white|black|red|blue|green))?\>"
 TYPE:     "^i?color[[:space:]]*(bright)?(white|black|red|blue)?(,(yellow|magenta|cyan))?\>"
@@ -14,8 +14,7 @@ KEYWORD:  "^[[:space:]]*(set|unset)[[:space:]]+(suspend|suspendenable|tabsize|ta
 KEYWORD:  "^[[:space:]]*(set|unset)[[:space:]]+(whitespace|wordbounds)\>"
 KEYWORD:  "^(bind|i?color|set|unset|syntax|header|magic)\>"
 color red "^unbind\>"
-KEYWORD:  "^i?color\>" "\<(start|end)="
-MACRO:    "^include\>"
+KEYWORD:  "\<(start|end)="
 
 KEYWORD:  "^(PLAIN|FUNCTION|STRING|COMMENT|TYPE|BOOLEAN|NUMBER):"
 KEYWORD:  "^(VARIABLE|OPERATOR|~?KEYWORD|MACRO|REGEXP|ESCAPE):"
@@ -24,7 +23,9 @@ OPERATOR: "[:=]"
 MACRO:    "^\+(TODO|LINT|STRING|BOOLEAN|FUNCTION|INI|(C|HASH)COMMENT|WHITESPACES?|LONGLINE[0-9]*)([[:space:]]|$)"
 +WHITESPACES
 
-+STRING
+STRING:   ""[^"]*""
+PATH:     "^include[[:space:]]+.+?[[:space:]]*$"
+MACRO:    "^include\>"
 ESCAPE:   "\\.?"
 +HASHCOMMENT
 +LINT
