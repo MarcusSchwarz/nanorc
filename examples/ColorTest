@@ -1,33 +1,65 @@
 The following two lines (which read, in capital letters, "default" and "plain"
 respectively) should be the same color.  If they're not, or if you see
 something else than "default" and "plain", please read the "Installation"
-section of the README.
+section of the README.  Other lines should contain two words separated
+by a hypen.  The first word (the one written in all upper case) in each line
+should be colored, the second (after a dash) should not (because the match
+is case sensitive).
 
-DEFAULT
-PLAIN
-FUNCTION
-STRING
-COMMENT
-TYPE
-BOOLEAN
-NUMBER
-VARIABLE
-OPERATOR
-KEYWORD
-MACRO
-REGEXP
-ESCAPE
-DELIMITER
-JUMP
-WARNING
-SECTION
-TAG
-ATTRIBUTE
-ENTITY
-PATH
-URL
-EMAIL
-WHITESPACE
+DEFAULT    - Default
+PLAIN      - Plain
+FUNCTION   - Function
+STRING     - String
+COMMENT    - Comment
+TYPE       - Type
+BOOLEAN    - Boolean
+NUMBER     - Number
+VARIABLE   - Variable
+OPERATOR   - Operator
+KEYWORD    - Keyword
+MACRO      - Macro
+REGEXP     - RegExp
+ESCAPE     - Escape
+DELIMITER  - Delimiter
+JUMP       - Jump
+WARNING    - Warng
+SECTION    - Section
+TAG        - Tag
+ATTRIBUTE  - Attribute
+ENTITY     - Entity
+PATH       - Path
+URL        - url
+EMAIL      - EMail
+WHITESPACE - WhiteSpace
+
+Unlike the previous section, both words in each line below should be colored,
+and their colors should match among each other, despite an obvious mismatch
+in case between the two variants of each word.
+
+iPlAiN      - iPlain
+iFuNcTiOn   - iFunction
+iStRiNg     - iString
+iCoMmEnT    - iComment
+iTyPe       - iType
+iBoOlEaN    - iBoolean
+iNuMbEr     - iNumber
+iVaRiAbLe   - iVariable
+iOpErAtOr   - iOperator
+iKeYwOrD    - iKeyword
+iMaCrO      - iMacro
+iReGeXp     - iRegExp
+iEsCaPe     - iEscape
+iDeLiMiTeR  - iDelimiter
+iJuMp       - iJump
+iWaRnInG    - iWarng
+iSeCtIoN    - iSection
+iTaG        - iTag
+iAtTrIbUtE  - iAttribute
+iEnTiTy     - iEntity
+iPaTh       - iPath
+iUrL        - iurl
+iEmAiL      - iEMail
+iWhItEsPaCe - iWhiteSpace
 
 These words should appear in their respective color:
 black red green yellow blue magenta cyan white
