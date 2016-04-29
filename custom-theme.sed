@@ -14,10 +14,11 @@ s|^REGEXP:|color blue,cyan|
 s|^ESCAPE:|color black,cyan|
 s|^DELIMITER:|color brightred|
 s|^JUMP:|color brightcyan|
-s|^WARNING:|color brightwhite,red|
+s|^WARNING:|color brightyellow,red|
 s|^SECTION:|color brightgreen|
-s|^TAG:|color brightmagenta|
-s|^ATTRIBUTE:|color magenta|
+s|^TAG:|color brightwhite|
+s|^ATTRIBUTE:|color green|
+s|^ENTITY:|color brightred|
 s|^PATH:|color brightblue|
 s|^URL:|color brightblue|
 s|^EMAIL:|color brightblue|

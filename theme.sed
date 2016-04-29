@@ -18,6 +18,7 @@ s|^WARNING:|color brightwhite,red|
 s|^SECTION:|color brightmagenta|
 s|^TAG:|color brightmagenta|
 s|^ATTRIBUTE:|color magenta|
+s|^ENTITY:|color magenta|
 s|^PATH:|color brightblue|
 s|^URL:|color brightblue|
 s|^EMAIL:|color brightblue|
