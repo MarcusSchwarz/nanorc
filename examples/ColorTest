@@ -26,7 +26,7 @@ WARNING    - Warng
 SECTION    - Section
 TAG        - Tag
 ATTRIBUTE  - Attribute
-ENTITY     - Entity
+CHARREF    - CharRef
 PATH       - Path
 URL        - url
 EMAIL      - EMail
@@ -55,7 +55,7 @@ iWaRnInG    - iWarng
 iSeCtIoN    - iSection
 iTaG        - iTag
 iAtTrIbUtE  - iAttribute
-iEnTiTy     - iEntity
+iChArReF    - iCharRef
 iPaTh       - iPath
 iUrL        - iurl
 iEmAiL      - iEMail
