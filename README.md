@@ -19,8 +19,9 @@ not of the finest quality either, even when they were actively maintained
 better than the ones that come bundled with nano). Here is a brief list
 of what supported formats changed in this repository compared to the source one.
 
-### New format
+### New format support
 
+  * CronTab
   * LogRotate configuration files
   * NanorcTheme (theme files used in this project)
 
@@ -32,7 +33,7 @@ of what supported formats changed in this repository compared to the source one.
   * Nginx configuration files
   * ColorTest (bogus format for testing color themes)
 
-### Minor improvements
+### Minor improvements and tweaks
 
   * JavaScript scripts
   * Shell scripts
