@@ -22,6 +22,7 @@ of what supported formats changed in this repository compared to the source one.
 ### New format
 
   * LogRotate configuration files
+  * NanorcTheme (theme files used in this project)
 
 ### Greatly improved formats
 
