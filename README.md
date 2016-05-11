@@ -37,6 +37,7 @@ of what supported formats changed in this repository compared to the source one.
 ### Minor improvements and tweaks
 
   * JavaScript scripts
+  * Markdown texts
   * Shell scripts
 
 Installation
