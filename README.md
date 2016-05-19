@@ -22,6 +22,8 @@ of what supported formats changed in this repository compared to the source one.
 ### New format support
 
   * CronTab
+  * DM
+  * Erlang
   * LogRotate configuration files
   * NanorcTheme (theme files used in this project)
   * /etc/group, /etc/passwd, /etc/shadow
