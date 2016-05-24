@@ -4,7 +4,7 @@ LANGS  = apacheconf asm awk c cmake coffeescript colortest crontab csharp css \
          ledger lisp logrotate lua makefile man markdown mpdconf nanorc \
          nanorctheme nginx patch peg perl php pkg-config pkgbuild po privoxy \
          properties python rpmspec ruby sed shell sql systemd tex vala vi xml \
-         xresources yaml yum 
+         xresources yaml yum
 
 MIXINS = $(wildcard mixins/*.nanorc)
 FILES  = $(addsuffix .nanorc, $(LANGS))
