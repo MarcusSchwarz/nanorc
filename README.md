@@ -21,6 +21,7 @@ of what supported formats changed in this repository compared to the source one.
 
 ### New format support
 
+  * Asterisk PBX configuration (both .conf and .ael)
   * CronTab
   * DM
   * Erlang
