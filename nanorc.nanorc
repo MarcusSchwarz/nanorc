@@ -1,6 +1,7 @@
 syntax "nanorc" "nanorc$"
 header "^syntax[[:space:]]+"[^"]*"[[:space:]]+""
 
++RESETALL
 TYPE:     "^i?color[[:space:]]*(bright)?(white|black|red|blue)?(,(white|black|red|blue|green))?\>"
 TYPE:     "^i?color[[:space:]]*(bright)?(white|black|red|blue)?(,(yellow|magenta|cyan))?\>"
 TYPE:     "^i?color[[:space:]]*(bright)?(green|yellow|magenta|cyan)?(,(white|black|red|blue|green))?\>"
@@ -20,7 +21,8 @@ KEYWORD:  "^~?(PLAIN|FUNCTION|STRING|COMMENT|TYPE|BOOLEAN|NUMBER):"
 KEYWORD:  "^~?(VARIABLE|OPERATOR|KEYWORD|MACRO|REGEXP|ESCAPE):"
 KEYWORD:  "^~?(DELIMITER|JUMP|WARNING|SECTION|TAG|ATTRIBUTE|CHARREF|PATH|URL|EMAIL|WHITESPACE):"
 OPERATOR: "^~|[:=]"
-MACRO:    "^\+(TODO|LINT|STRING|BOOLEAN|FUNCTION|INI|(C|HASH)COMMENT|WHITESPACES?|LONGLINE[0-9]*)([[:space:]]|$)"
+MACRO:    "^\+(TODO|LINT|STRING|BOOLEAN|FUNCTION|INI)([[:space:]]|$)"
+MACRO:    "^\+((C|HASH)COMMENT|RESETALL|WHITESPACES?|LONGLINE[0-9]*)([[:space:]]|$)"
 +WHITESPACES
 
 STRING:   ""[^"]*""
